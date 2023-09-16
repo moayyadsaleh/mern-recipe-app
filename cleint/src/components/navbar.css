@@ -1,0 +1,17 @@
+.navbar {
+  position: fixed; /* Set the position to fixed */
+  top: 0; /* Position at the top of the screen */
+  left: 0;
+  right: 0;
+  background-color: #333; /* Add a background color */
+  color: white; /* Set text color to white */
+  display: flex; /* Use flex layout to align links horizontally */
+  justify-content: space-around; /* Space out the links evenly */
+  padding: 10px; /* Add some padding for spacing */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
