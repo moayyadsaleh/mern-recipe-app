@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
-
+import "../pages/styledpages.css";
 export const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
 

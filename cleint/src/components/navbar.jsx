@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
+
 export const Navbar = () => {
   const [cookies, , removeCookies] = useCookies(["access_token"]);
   const navigate = useNavigate();
@@ -9,7 +10,7 @@ export const Navbar = () => {
   const handleLogout = () => {
     // Remove the access token cookie and perform any additional logout actions if needed
     removeCookies("access_token");
-    windows.localStorage.removeItem("userID");
+    window.localStorage.removeItem("userID"); // Corrected "windows" to "window"
     navigate("/auth");
   };
 
